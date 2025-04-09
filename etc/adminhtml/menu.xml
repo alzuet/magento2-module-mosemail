@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Atelier_EmailSender::emails" title="Envío de correos" module="Atelier_EmailSender" sortOrder="90" parent="Magento_Backend::content" resource="Atelier_EmailSender::emails" />
+        <add id="Atelier_EmailSender::email_logs" title="Logs de Emails" module="Atelier_EmailSender" sortOrder="10" parent="Atelier_EmailSender::emails" action="emailsender/emails/index" resource="Atelier_EmailSender::email_logs" />
+        <add id="Atelier_EmailSender::email_config" title="Configuración" module="Atelier_EmailSender" sortOrder="20" parent="Atelier_EmailSender::emails" action="adminhtml/system_config/edit/section/atelier_email" resource="Atelier_EmailSender::email_config" />
+    </menu>
+</config>

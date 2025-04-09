@@ -1,0 +1,21 @@
+
+ {
+    "name": "atelier/mosemail",
+    "description": "Módulo para enviar email con Bravo y capturar los correos",
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "require": {
+        "magento/framework": "~103.0.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Atelier\\EmailSender\\": ""
+        }
+    }
+}
